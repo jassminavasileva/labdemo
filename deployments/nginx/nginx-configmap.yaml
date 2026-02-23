@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+  namespace: nginx
+data:
+  index.html: |
+    <html>
+      <head><title>My Static Site</title></head>
+      <body>
+        <h1>Hello from Kubernetes Nginx!</h1>
+        <p>This is a static HTML page served via ConfigMap.</p>
+      </body>
+    </html>
